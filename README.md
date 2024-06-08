@@ -10,7 +10,7 @@
 - df -h Display disk space usage in human-readable format
 
 add these commands or any commands of your choice in commands.txt file
-- NOTE: info about the command and what it does should be kept in a single line :)
+NOTE: info about the command and what it does should be kept in a single line :)
 
 
 
