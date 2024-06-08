@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Path to the commands file
-COMMANDS_FILE=~/commands.txt
+COMMANDS_FILE=~/bin/commands.txt
 
 # Check if the commands file exists
 if [[ ! -f $COMMANDS_FILE ]]; then
@@ -10,7 +10,7 @@ if [[ ! -f $COMMANDS_FILE ]]; then
 fi
 
 # Use fzf to fuzzy find a command from the file
-SELECTED_LINE=$(cat $COMMANDS_FILE | fzf)
+SELECTED_LINE=$(cat $COMMANDS_FILE | fzf )
 
 # If a line was selected, extract and execute the command
 if [[ -n "$SELECTED_LINE" ]]; then
@@ -19,6 +19,8 @@ if [[ -n "$SELECTED_LINE" ]]; then
     
     # Execute the command
     echo "Executing: $COMMAND"
+    echo "$COMMAND" | xclip -selection clipboard
     eval "$COMMAND"
 fi
+
 
