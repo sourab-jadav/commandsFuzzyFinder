@@ -2,7 +2,6 @@
 
 # Path to the commands file
 COMMANDS_FILE=~/bin/commands.txt
-
 # Check if the commands file exists
 if [[ ! -f $COMMANDS_FILE ]]; then
     echo "Commands file not found!"
@@ -16,16 +15,10 @@ SELECTED_LINE=$(cat $COMMANDS_FILE | fzf)
 if [[ -n "$SELECTED_LINE" ]]; then
     # Extract the command using one or more spaces as the delimiter
     COMMAND=$(echo "$SELECTED_LINE" | awk -F' + ' '{print $1}')
-    
-    # Prompt the user to either execute or copy the command
-    read -p "Do you want to execute the command? (y/n): " choice
-
-    if [[ $choice == "y" ]]; then
-        # Execute the command
+    if echo "$SELECTED_LINE" | grep -q "exec"; then
         echo "Executing: $COMMAND"
         eval "$COMMAND"
     else
-        # Copy the command to the clipboard
         echo "Copying the command to clipboard."
         echo "$COMMAND" | xclip -selection clipboard
     fi

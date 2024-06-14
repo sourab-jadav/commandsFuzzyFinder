@@ -1,12 +1,12 @@
-ls -l              List files in long format
-cd ..              Move to the parent directory
+ls -l              List files in long format<exec>
+cd ..              Move to the parent directory<exec>
 rm -rf             Remove files and directories recursively and forcefully
 grep               Search for patterns within files
-htop               Interactive process viewer
-df -h              Display disk space usage in human-readable format
-pacman -Q|less     List all packages
-pacman -Qi         Show package info
-sudo pacman -Sc    clean package cache
-pacman -Ss         search for package
-printenv|less      print env variables 
-pcmanfm            filemanager
+htop               Interactive process viewer<exec>
+df -h              Display disk space usage in human-readable format<exec>
+pacman -Q|less     List all packages<exec>
+pacman -Qi         Show package info<exec>
+sudo pacman -Sc    clean package cache<exec>
+pacman -Ss         search for package<exec>
+printenv|less      print env variables <exec>
+pcmanfm            filemanager<exec>
