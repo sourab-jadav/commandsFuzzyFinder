@@ -8,5 +8,5 @@ pacman -Q|less     List all packages
 pacman -Qi         Show package info
 sudo pacman -Sc    clean package cache
 pacman -Ss         search for package
-printenv|less      print env variables
+printenv|less      print env variables 
 pcmanfm            filemanager
