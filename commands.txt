@@ -10,3 +10,6 @@ sudo pacman -Sc    clean package cache<exec>
 pacman -Ss         search for package<exec>
 printenv|less      print env variables <exec>
 pcmanfm            filemanager<exec>
+set -o vi          set vi for editing<exec>
+set -o emacs       set emacs for editing<exec>
+uname -m           see system architecture<exec>
