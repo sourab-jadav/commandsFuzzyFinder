@@ -6,11 +6,11 @@ htop                           Interactive process viewer<exec>
 df -h                          Display disk space usage in human-readable format<exec>
 pacman -Q|less                 List all packages<exec>
 pacman -Qi                     Show package info<exec>
-sudo pacman -Sc                clean package cache<exec>
-pacman -Ss                     search for package<exec>
-printenv|less                  print env variables <exec>
-pcmanfm                        filemanager<exec>
-set -o vi                      set vi for editing<exec>
-set -o emacs                   set emacs for editing<exec>
-uname -m                       see system architecture<exec>
-udiskie --tray --automount     automatically mount the disk<exec>
+sudo pacman -Sc                Clean package cache<exec>
+pacman -Ss                     Search for package<exec>
+printenv|less                  Print env variables <exec>
+pcmanfm                        Filemanager<exec>
+set -o vi                      Set vi for editing<exec>
+set -o emacs                   Set emacs for editing<exec>
+uname -m                       See system architecture<exec>
+udiskie --tray --automount     Automatically mount the disk<exec>
