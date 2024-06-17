@@ -14,3 +14,5 @@ set -o vi                      Set vi for editing<exec>
 set -o emacs                   Set emacs for editing<exec>
 uname -m                       See system architecture<exec>
 udiskie --tray --automount     Automatically mount the disk<exec>
+feh --sort mtime -n;           open image
+
