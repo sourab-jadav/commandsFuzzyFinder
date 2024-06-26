@@ -16,3 +16,4 @@ uname -m                       See system architecture<exec>
 udiskie --tray --automount     Automatically mount the disk<exec>
 feh --sort mtime -n;           open image
 fg                             resume the last suspended job<exec>
+ip addr show | grep inet | grep -v 127.0.0.1 | awk '{print $2}' | awk -F'/' '{print $1}'    Show IP address<exec>
